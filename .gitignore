@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_Store
+tmp
+/http/*.private.env.json
+logs/*
+.env
