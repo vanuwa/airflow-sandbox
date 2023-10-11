@@ -1,7 +1,13 @@
 .idea
 .vscode
+.vs
 .DS_Store
 tmp
 /http/*.private.env.json
 logs/*
 .env
+venv/
+**/__pycache__/
+__pycache__/
+mongodb-data/
+pg-data/

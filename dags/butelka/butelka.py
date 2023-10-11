@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 
 from airflow import DAG
+from airflow.operators.empty import EmptyOperator
 
 PARENT = 'butelka'
 
@@ -25,4 +26,7 @@ with DAG(
   schedule_interval=schedule_interval,
   template_searchpath=['/opt/airflow/dags/butelka/sql']
 ) as dag:
+  flow_start = EmptyOperator(task_id='flow_start')
+  flow_end = EmptyOperator(task_id='flow_end')
 
+  flow_start >> flow_end
