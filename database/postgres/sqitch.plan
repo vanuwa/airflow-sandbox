@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=airflow-sandbox
+%uri=https://github.com/vanuwa/airflow-sandbox/
+
